@@ -1,0 +1,37 @@
+Platformer - side-scroller
+
+---Modez:
+	2 player battle mode
+	1 player story mode to gather spells (open world but not procedural gen)
+	1 player battle mode
+
+---Code structure:
+	no side effects
+	graphics class contains lighting, layers, etc and calls all the draw functions
+	no using love. for classes other than main
+
+---Magic powerz:
+	elements(fire earth air light...)
+	light level of each magical projectile
+	spell locations in 1 player story mode randomised across map
+	player has two hands which are slots which can be used to hold spells
+	spells can manipulate anything, including body parts, and even space!
+
+---keyboard shortcuts:
+	Player 1:
+		wasd for movement
+		space for jump
+		q & e for left hand and right hand spells
+		1 for left hand switch to next spell
+		3 for right hand switch to next spell
+
+	Player 2:
+		arrow keys for movement
+		ctrl & 0 on numpad for jump
+		shift & 1 on numpad for left hand and right hand spells
+		delete for left hand switch to next spell
+		page down for right hand switch to next spell
+        
+---platform class for all hitboxed objects
+---bad memory saving as we will never delete arrasy lines because CBA
+---
