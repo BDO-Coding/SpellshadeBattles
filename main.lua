@@ -1,15 +1,16 @@
-require images
+require "images"
+require "graphics"
+require "menu"
 
 function love.load()
 
 	images.load()
-	love.window.setFullscreen(true, "desktop")
-	width, height = love.graphics.getDimensions()
+	graphics.configureScreen()
+	menu.load()
+	menu.newButton("It works!", 500, 10, 500, 300, 0, 0, 255)
+	menu.newButton("Width: "..screenWidth.."\n Height: "..screenHeight, 500,500,200,100,20,100,0)
 
 end
 
-function love.draw()
-	
-	love.
 
-end
+
