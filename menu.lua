@@ -18,7 +18,6 @@ function menu.draw(screenXOffset, screenYOffset)
 
 	menu.drawButtons(screenXOffset, screenYOffset)
 	love.graphics.setColor(255,255,255)
-	love.graphics.print(buttonArray[1][6],1,1)
 
 end
 
@@ -89,7 +88,7 @@ end
 
 function menu.setupMainMenu()
 
-	menu.newButton("Exit Fullscreen", 1700, 0, 200, 50, 255, 0, 0, "standardButtonHover", "exitFullscreen")
+	menu.newButton("Exit Game", 1700, 0, 200, 50, 255, 0, 0, "standardButtonHover", "exitGame")
 
 end
 
@@ -101,9 +100,9 @@ function standardButtonHover(buttonID)
 	--buttonArray[buttonID][8] = 0
 end
 
-function exitFullscreen()
+function exitGame()
 
-	love.window.setFullscreen(false, "desktop")
+	love.window.close()
 
 end
 
