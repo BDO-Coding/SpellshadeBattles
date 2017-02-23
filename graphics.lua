@@ -1,6 +1,7 @@
 graphics = {}
 
 require "menu"
+require "background"
 
 function love.draw()
 
@@ -19,6 +20,7 @@ end
 function graphics.drawClasses()
 
 	menu.draw(screenWidth/1920, screenHeight/1080)
+	background.draw(screenWidth/1920, screenHeight/1080)
 
 end
 
