@@ -7,7 +7,6 @@ function love.load()
 	images.load()
 	graphics.configureScreen()
 	menu.load()
+
 end
-
-
 
